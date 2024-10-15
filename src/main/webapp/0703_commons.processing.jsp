@@ -12,7 +12,7 @@
 <body>
 <%
 	String path ="/Users:upload";
-	DiskFileUpload upload = new DiskFileUpload();
+	FileUpload upload = new FileUpload(); // DiskFileUpload 클래스는 오래된 코드 
 	upload.setSizeMax(1000000);
 	upload.setSizeThreshold(4096);
 	upload.setRepositoryPath(path);
